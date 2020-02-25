@@ -6,7 +6,9 @@
 #include "object/pyInteger.hpp"
 #include "object/pyDict.hpp"
 #include "runtime/functionObject.hpp"
+#include "object/list.hpp"
 
+#include <memory.h>
 #include <iostream>
 using namespace std;
 
@@ -171,4 +173,35 @@ PyObject* StringKlass::add(PyObject* x, PyObject* y) {
 
     sz->set(sx->length() + sy->length(), '\0');
     return sz;
+}
+
+PyString* PyString::join(PyObject* obj) {
+    List* list = (List*)obj;
+    assert(list && list->klass() == ListKlass::get_instance());
+    
+    int total = -_length;
+    if (list->size() == 0) {
+        return new PyString("");
+    }
+    for (int i = 0;i < list->size();i++) {
+        PyString* str = (PyString*)(list->get(i));
+        total += _length;
+        total += str->length();
+    }
+    
+    PyString* res = new PyString(total);
+    PyString* first_str = (PyString*)(list->get(0));
+
+    total = 0;
+    memcpy(res->_value, first_str->_value, first_str->length());
+    total += first_str->length();
+    
+    for (int i = 1;i < list->size();i++) {
+        memcpy(res->_value + total, _value, _length);
+        total += _length;
+        PyString* str = (PyString*)(list->get(i));
+        memcpy(res->_value + total, str->_value, str->length());
+        total += str->length();
+    }
+    return res;
 }

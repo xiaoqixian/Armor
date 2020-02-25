@@ -23,4 +23,9 @@ ADD_EXECUTABLE(armor main.cpp
     runtime/module.cpp
 )
 
+ADD_LIBRARY(math SHARED
+    extlib/math.cpp
+)
+
 INCLUDE_DIRECTORIES(./)
+TARGET_LINK_LIBRARIES(armor ${CMAKE_DL_LIBS})

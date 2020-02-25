@@ -23,6 +23,7 @@ class ModuleObject: public PyObject {
     public:
         ModuleObject(PyDict* x);
         static ModuleObject* import_module(PyObject* mod_name);
+        static ModuleObject* import_so(PyString* mod_name);
         
         void put(PyObject*name, PyObject* module);
         PyObject* get(PyObject* name);

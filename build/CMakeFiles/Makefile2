@@ -65,6 +65,43 @@ CMAKE_SOURCE_DIR = /home/lunar/armor
 CMAKE_BINARY_DIR = /home/lunar/armor/build
 
 #=============================================================================
+# Target rules for target CMakeFiles/math.dir
+
+# All Build rule for target.
+CMakeFiles/math.dir/all:
+	$(MAKE) -f CMakeFiles/math.dir/build.make CMakeFiles/math.dir/depend
+	$(MAKE) -f CMakeFiles/math.dir/build.make CMakeFiles/math.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lunar/armor/build/CMakeFiles --progress-num=18,19 "Built target math"
+.PHONY : CMakeFiles/math.dir/all
+
+# Include target in all.
+all: CMakeFiles/math.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/math.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lunar/armor/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/math.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lunar/armor/build/CMakeFiles 0
+.PHONY : CMakeFiles/math.dir/rule
+
+# Convenience name for target.
+math: CMakeFiles/math.dir/rule
+
+.PHONY : math
+
+# clean rule for target.
+CMakeFiles/math.dir/clean:
+	$(MAKE) -f CMakeFiles/math.dir/build.make CMakeFiles/math.dir/clean
+.PHONY : CMakeFiles/math.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/math.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/armor.dir
 
 # All Build rule for target.

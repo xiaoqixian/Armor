@@ -1,3 +1,4 @@
 /home/lunar/armor/build/CMakeFiles/rebuild_cache.dir
 /home/lunar/armor/build/CMakeFiles/edit_cache.dir
+/home/lunar/armor/build/CMakeFiles/math.dir
 /home/lunar/armor/build/CMakeFiles/armor.dir

@@ -5,6 +5,7 @@
 #include "object/list.hpp"
 #include "runtime/functionObject.hpp"
 #include "runtime/module.hpp"
+#include "runtime/interpreter.hpp"
 
 PyInteger* Universe::ptrue = NULL;
 PyInteger* Universe::pfalse = NULL;
@@ -55,6 +56,6 @@ void Universe::genesis() {
     
     ModuleKlass::get_instance()->order_supers();
     
-    //Interpreter::get_instance()->initialize();
+    Interpreter::get_instance()->initialize();
 
 }

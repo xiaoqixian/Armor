@@ -1,3 +1,2 @@
-
-from b import add
-print add(1,3)
+import libmath
+print libmath.add(1,2)

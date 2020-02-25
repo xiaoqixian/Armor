@@ -47,6 +47,8 @@ class PyString:public PyObject {
         void set(int i,char x) {
             _value[i] = x;
         }
+        
+        PyString* join(PyObject* iterable);
 
 };
 

@@ -39,6 +39,10 @@ Interpreter::Interpreter() {
     _builtins->put(new PyString("isinstance"), new FunctionObject(isinstance));
     _builtins->put(new PyString("type"), new FunctionObject(type_of));
     
+}
+
+void Interpreter::initialize() {
+    _builtins->extend(ModuleObject::import_module(new PyString("builtin")));
     _modules = new PyDict();
     _modules->put(new PyString("__builtins__"), _builtins);
 }
@@ -159,6 +163,7 @@ void Interpreter::eval_frame() {
                 _frame->set_pc(op_arg);
                 break;
             case ByteCode::SETUP_LOOP:
+                printf("SETUP_LOOP\n");
                 _frame->_loop_stack->add(new Block(op_code,_frame->get_pc() + op_arg,_frame->_stack->size()));
                 break;
             case ByteCode::POP_BLOCK:
@@ -290,6 +295,8 @@ void Interpreter::eval_frame() {
                     }
                 }
                 
+                v = _frame->_stack->get(_frame->_stack->size() - 1);
+                printf("function_name to call is %s\n", ((PyString*)v)->value());
                 build_frame(_frame->_stack->pop(),args);
                 if (args != NULL) {
                     delete args;

@@ -105,6 +105,7 @@ CMakeFiles/armor.dir/object/pyObject.cpp.o
 CMakeFiles/armor.dir/object/pyString.cpp.o
  .././code/codeObject.hpp
  .././object/klass.hpp
+ .././object/list.hpp
  .././object/pyDict.hpp
  .././object/pyInteger.hpp
  .././object/pyObject.hpp
@@ -167,12 +168,14 @@ CMakeFiles/armor.dir/runtime/module.cpp.o
  .././code/binaryFileParser.hpp
  .././code/bytecode.hpp
  .././code/codeObject.hpp
+ .././inc/armor.hpp
  .././object/klass.hpp
  .././object/list.hpp
  .././object/pyDict.hpp
  .././object/pyInteger.hpp
  .././object/pyObject.hpp
  .././object/pyString.hpp
+ .././runtime/functionObject.hpp
  .././runtime/interpreter.hpp
  .././runtime/module.hpp
  .././runtime/stringTable.hpp
@@ -190,6 +193,7 @@ CMakeFiles/armor.dir/runtime/stringTable.cpp.o
  .././util/arrayList.hpp
  /home/lunar/armor/runtime/stringTable.cpp
 CMakeFiles/armor.dir/runtime/universe.cpp.o
+ .././code/bytecode.hpp
  .././code/codeObject.hpp
  .././object/klass.hpp
  .././object/list.hpp
@@ -198,6 +202,7 @@ CMakeFiles/armor.dir/runtime/universe.cpp.o
  .././object/pyObject.hpp
  .././object/pyString.hpp
  .././runtime/functionObject.hpp
+ .././runtime/interpreter.hpp
  .././runtime/module.hpp
  .././runtime/universe.hpp
  .././util/arrayList.cpp

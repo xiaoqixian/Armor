@@ -27,6 +27,7 @@ class Interpreter {
         void destory_frame();
         PyObject* call_virtual(PyObject* func,ObjList args);
         PyDict* run_mod(CodeObject* code, PyString* mod_name);
+        void initialize();
 };
 
 

@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named math
+
+# Build rule for target.
+math: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 math
+.PHONY : math
+
+# fast build rule for target.
+math/fast:
+	$(MAKE) -f CMakeFiles/math.dir/build.make CMakeFiles/math.dir/build
+.PHONY : math/fast
+
+#=============================================================================
 # Target rules for targets named armor
 
 # Build rule for target.
@@ -176,6 +189,33 @@ code/codeObject.s: code/codeObject.cpp.s
 code/codeObject.cpp.s:
 	$(MAKE) -f CMakeFiles/armor.dir/build.make CMakeFiles/armor.dir/code/codeObject.cpp.s
 .PHONY : code/codeObject.cpp.s
+
+extlib/math.o: extlib/math.cpp.o
+
+.PHONY : extlib/math.o
+
+# target to build an object file
+extlib/math.cpp.o:
+	$(MAKE) -f CMakeFiles/math.dir/build.make CMakeFiles/math.dir/extlib/math.cpp.o
+.PHONY : extlib/math.cpp.o
+
+extlib/math.i: extlib/math.cpp.i
+
+.PHONY : extlib/math.i
+
+# target to preprocess a source file
+extlib/math.cpp.i:
+	$(MAKE) -f CMakeFiles/math.dir/build.make CMakeFiles/math.dir/extlib/math.cpp.i
+.PHONY : extlib/math.cpp.i
+
+extlib/math.s: extlib/math.cpp.s
+
+.PHONY : extlib/math.s
+
+# target to generate assembly for a file
+extlib/math.cpp.s:
+	$(MAKE) -f CMakeFiles/math.dir/build.make CMakeFiles/math.dir/extlib/math.cpp.s
+.PHONY : extlib/math.cpp.s
 
 main.o: main.cpp.o
 
@@ -563,6 +603,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... math"
 	@echo "... armor"
 	@echo "... code/binaryFileParser.o"
 	@echo "... code/binaryFileParser.i"
@@ -570,6 +611,9 @@ help:
 	@echo "... code/codeObject.o"
 	@echo "... code/codeObject.i"
 	@echo "... code/codeObject.s"
+	@echo "... extlib/math.o"
+	@echo "... extlib/math.i"
+	@echo "... extlib/math.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

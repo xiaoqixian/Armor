@@ -11,7 +11,7 @@ class StringTable {
     public:
         static StringTable* get_instance();
         PyString *next_str, *mod_str, *init_str, *add_str, *getattr_str;
-        PyString *name_str, *pyc_suf_str;
+        PyString *name_str, *pyc_suf_str, *empty_str, *libdir_pre_str, *so_suf_str;
 };
 
 #endif

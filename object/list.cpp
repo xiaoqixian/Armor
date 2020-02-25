@@ -131,7 +131,7 @@ ListIteratorKlass::ListIteratorKlass() {
 
 ListIterator::ListIterator(List* l) {
     _owner = l;
-    _iter_count = 2;
+    _iter_count = 0;
     set_klass(ListIteratorKlass::get_instance());
 }
 
