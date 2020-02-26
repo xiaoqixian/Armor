@@ -13,7 +13,7 @@ StringTable::StringTable() {
     name_str = new PyString("__name__");
     pyc_suf_str = new PyString(".pyc");
     empty_str = new PyString("");
-    libdir_pre_str = new PyString("./lib/");
+    libdir_pre_str = new PyString("../lib/");
     so_suf_str = new PyString(".so");
 }
 

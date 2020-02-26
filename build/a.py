@@ -1,2 +1,4 @@
-import libmath
-print libmath.add(1,2)
+import math
+
+print math.pi
+print math.sin(math.pi / 3)

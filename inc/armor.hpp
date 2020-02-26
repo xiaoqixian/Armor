@@ -3,6 +3,7 @@
 
 #include "runtime/functionObject.hpp"
 #include "object/pyInteger.hpp"
+#include "object/double.hpp"
 
 #define SO_PUBLIC __attribute__((visibility("default")))
 

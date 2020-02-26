@@ -18,7 +18,7 @@ class DoubleKlass: public Klass {
         }
         void initialize();
         virtual PyObject* add(PyObject* x, PyObject* y);
-        virtual PyObject* allocate_instance(PyObject* callable, ArrayLisy<PyObject*>* args);
+        virtual PyObject* allocate_instance(PyObject* callable, ArrayList<PyObject*>* args);
         virtual void print(PyObject* obj);
         virtual PyObject* greater(PyObject* x,PyObject* y);
 };
@@ -28,6 +28,7 @@ class Double: public PyObject {
         double _value;
         
     public:
+        Double(double x);
         void set_value(double val) {
             _value = val;
         }

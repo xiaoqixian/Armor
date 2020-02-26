@@ -169,6 +169,7 @@ CMakeFiles/armor.dir/runtime/module.cpp.o
  .././code/bytecode.hpp
  .././code/codeObject.hpp
  .././inc/armor.hpp
+ .././object/double.hpp
  .././object/klass.hpp
  .././object/list.hpp
  .././object/pyDict.hpp

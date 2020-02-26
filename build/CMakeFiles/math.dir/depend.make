@@ -3,6 +3,7 @@
 
 CMakeFiles/math.dir/extlib/math.cpp.o: .././code/codeObject.hpp
 CMakeFiles/math.dir/extlib/math.cpp.o: .././inc/armor.hpp
+CMakeFiles/math.dir/extlib/math.cpp.o: .././object/double.hpp
 CMakeFiles/math.dir/extlib/math.cpp.o: .././object/klass.hpp
 CMakeFiles/math.dir/extlib/math.cpp.o: .././object/pyDict.hpp
 CMakeFiles/math.dir/extlib/math.cpp.o: .././object/pyInteger.hpp

@@ -4,6 +4,7 @@
 CMakeFiles/math.dir/extlib/math.cpp.o
  .././code/codeObject.hpp
  .././inc/armor.hpp
+ .././object/double.hpp
  .././object/klass.hpp
  .././object/pyDict.hpp
  .././object/pyInteger.hpp

@@ -19,6 +19,10 @@ runtime/functionObject.hpp
 .././inc/runtime/functionObject.hpp
 object/pyInteger.hpp
 .././inc/object/pyInteger.hpp
+object/double.hpp
+.././inc/object/double.hpp
+
+.././object/double.hpp
 
 .././object/klass.hpp
 stdio.h
@@ -101,4 +105,6 @@ stdio.h
 /home/lunar/armor/extlib/math.cpp
 inc/armor.hpp
 /home/lunar/armor/extlib/inc/armor.hpp
+math.h
+-
 

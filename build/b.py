@@ -1,2 +1,3 @@
+import libmath
 
-print ord('d')
+print libmath.sqrt(4)
