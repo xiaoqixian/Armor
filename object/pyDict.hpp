@@ -56,7 +56,6 @@ friend class DictKlass;
             return _map->remove(k);
         }
 
-        void update(PyDict* d);
 };
 
 #endif

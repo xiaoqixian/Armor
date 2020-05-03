@@ -6,9 +6,7 @@
 #include "object/pyInteger.hpp"
 #include "object/pyDict.hpp"
 #include "runtime/functionObject.hpp"
-#include "object/list.hpp"
 
-#include <memory.h>
 #include <iostream>
 using namespace std;
 
@@ -58,12 +56,6 @@ PyString::PyString(const char *x, int length) {
     for (int i = 0;i < length;i++) {
         _value[i] = x[i];
     }
-    set_klass(StringKlass::get_instance());
-}
-
-PyString::PyString(int len) {
-    _length = len;
-    _value = new char[len + 1];
     set_klass(StringKlass::get_instance());
 }
 
@@ -160,48 +152,20 @@ PyObject* StringKlass::slice(PyObject* object,PyObject* x,PyObject* y) {
     return s;
 }
 
-PyObject* StringKlass::add(PyObject* x, PyObject* y) {
+/*PyObject* StringKlass::add(PyObject* x,PyObject* y) {
     assert(x && x->klass() == this);
     assert(y && y->klass() == this);
-    
+
     PyString* sx = (PyString*)x;
     PyString* sy = (PyString*)y;
-    
-    PyString* sz = new PyString(sx->length() + sy->length());
-    memcpy(sz->_value, sx->_value, sx->length());
-    memcpy(sz->_value + sx->length(), sy->_value, sy->length());
 
-    sz->set(sx->length() + sy->length(), '\0');
-    return sz;
-}
 
-PyString* PyString::join(PyObject* obj) {
-    List* list = (List*)obj;
-    assert(list && list->klass() == ListKlass::get_instance());
-    
-    int total = -_length;
-    if (list->size() == 0) {
-        return new PyString("");
-    }
-    for (int i = 0;i < list->size();i++) {
-        PyString* str = (PyString*)(list->get(i));
-        total += _length;
-        total += str->length();
-    }
-    
-    PyString* res = new PyString(total);
-    PyString* first_str = (PyString*)(list->get(0));
+}*/
 
-    total = 0;
-    memcpy(res->_value, first_str->_value, first_str->length());
-    total += first_str->length();
+
+/*PyObject* PyString::add(PyObject* x) {
+    const int new_len = _length + ((PyString*)x)->length();
+    const char* new_str = new char[new_len];
     
-    for (int i = 1;i < list->size();i++) {
-        memcpy(res->_value + total, _value, _length);
-        total += _length;
-        PyString* str = (PyString*)(list->get(i));
-        memcpy(res->_value + total, str->_value, str->length());
-        total += str->length();
-    }
-    return res;
-}
+    return new PyString(new_str);
+}*/

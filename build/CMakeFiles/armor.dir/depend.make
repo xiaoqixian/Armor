@@ -104,7 +104,6 @@ CMakeFiles/armor.dir/object/pyObject.cpp.o: ../object/pyObject.cpp
 
 CMakeFiles/armor.dir/object/pyString.cpp.o: .././code/codeObject.hpp
 CMakeFiles/armor.dir/object/pyString.cpp.o: .././object/klass.hpp
-CMakeFiles/armor.dir/object/pyString.cpp.o: .././object/list.hpp
 CMakeFiles/armor.dir/object/pyString.cpp.o: .././object/pyDict.hpp
 CMakeFiles/armor.dir/object/pyString.cpp.o: .././object/pyInteger.hpp
 CMakeFiles/armor.dir/object/pyString.cpp.o: .././object/pyObject.hpp
@@ -156,35 +155,12 @@ CMakeFiles/armor.dir/runtime/interpreter.cpp.o: .././object/pyString.hpp
 CMakeFiles/armor.dir/runtime/interpreter.cpp.o: .././runtime/frameObject.hpp
 CMakeFiles/armor.dir/runtime/interpreter.cpp.o: .././runtime/functionObject.hpp
 CMakeFiles/armor.dir/runtime/interpreter.cpp.o: .././runtime/interpreter.hpp
-CMakeFiles/armor.dir/runtime/interpreter.cpp.o: .././runtime/module.hpp
 CMakeFiles/armor.dir/runtime/interpreter.cpp.o: .././runtime/stringTable.hpp
 CMakeFiles/armor.dir/runtime/interpreter.cpp.o: .././runtime/universe.hpp
 CMakeFiles/armor.dir/runtime/interpreter.cpp.o: .././util/arrayList.cpp
 CMakeFiles/armor.dir/runtime/interpreter.cpp.o: .././util/arrayList.hpp
 CMakeFiles/armor.dir/runtime/interpreter.cpp.o: .././util/map.hpp
 CMakeFiles/armor.dir/runtime/interpreter.cpp.o: ../runtime/interpreter.cpp
-
-CMakeFiles/armor.dir/runtime/module.cpp.o: .././code/binaryFileParser.hpp
-CMakeFiles/armor.dir/runtime/module.cpp.o: .././code/bytecode.hpp
-CMakeFiles/armor.dir/runtime/module.cpp.o: .././code/codeObject.hpp
-CMakeFiles/armor.dir/runtime/module.cpp.o: .././inc/armor.hpp
-CMakeFiles/armor.dir/runtime/module.cpp.o: .././object/double.hpp
-CMakeFiles/armor.dir/runtime/module.cpp.o: .././object/klass.hpp
-CMakeFiles/armor.dir/runtime/module.cpp.o: .././object/list.hpp
-CMakeFiles/armor.dir/runtime/module.cpp.o: .././object/pyDict.hpp
-CMakeFiles/armor.dir/runtime/module.cpp.o: .././object/pyInteger.hpp
-CMakeFiles/armor.dir/runtime/module.cpp.o: .././object/pyObject.hpp
-CMakeFiles/armor.dir/runtime/module.cpp.o: .././object/pyString.hpp
-CMakeFiles/armor.dir/runtime/module.cpp.o: .././runtime/functionObject.hpp
-CMakeFiles/armor.dir/runtime/module.cpp.o: .././runtime/interpreter.hpp
-CMakeFiles/armor.dir/runtime/module.cpp.o: .././runtime/module.hpp
-CMakeFiles/armor.dir/runtime/module.cpp.o: .././runtime/stringTable.hpp
-CMakeFiles/armor.dir/runtime/module.cpp.o: .././runtime/universe.hpp
-CMakeFiles/armor.dir/runtime/module.cpp.o: .././util/arrayList.cpp
-CMakeFiles/armor.dir/runtime/module.cpp.o: .././util/arrayList.hpp
-CMakeFiles/armor.dir/runtime/module.cpp.o: .././util/bufferedInputStream.hpp
-CMakeFiles/armor.dir/runtime/module.cpp.o: .././util/map.hpp
-CMakeFiles/armor.dir/runtime/module.cpp.o: ../runtime/module.cpp
 
 CMakeFiles/armor.dir/runtime/stringTable.cpp.o: .././object/klass.hpp
 CMakeFiles/armor.dir/runtime/stringTable.cpp.o: .././object/pyObject.hpp
@@ -193,7 +169,6 @@ CMakeFiles/armor.dir/runtime/stringTable.cpp.o: .././runtime/stringTable.hpp
 CMakeFiles/armor.dir/runtime/stringTable.cpp.o: .././util/arrayList.hpp
 CMakeFiles/armor.dir/runtime/stringTable.cpp.o: ../runtime/stringTable.cpp
 
-CMakeFiles/armor.dir/runtime/universe.cpp.o: .././code/bytecode.hpp
 CMakeFiles/armor.dir/runtime/universe.cpp.o: .././code/codeObject.hpp
 CMakeFiles/armor.dir/runtime/universe.cpp.o: .././object/klass.hpp
 CMakeFiles/armor.dir/runtime/universe.cpp.o: .././object/list.hpp
@@ -202,8 +177,6 @@ CMakeFiles/armor.dir/runtime/universe.cpp.o: .././object/pyInteger.hpp
 CMakeFiles/armor.dir/runtime/universe.cpp.o: .././object/pyObject.hpp
 CMakeFiles/armor.dir/runtime/universe.cpp.o: .././object/pyString.hpp
 CMakeFiles/armor.dir/runtime/universe.cpp.o: .././runtime/functionObject.hpp
-CMakeFiles/armor.dir/runtime/universe.cpp.o: .././runtime/interpreter.hpp
-CMakeFiles/armor.dir/runtime/universe.cpp.o: .././runtime/module.hpp
 CMakeFiles/armor.dir/runtime/universe.cpp.o: .././runtime/universe.hpp
 CMakeFiles/armor.dir/runtime/universe.cpp.o: .././util/arrayList.cpp
 CMakeFiles/armor.dir/runtime/universe.cpp.o: .././util/arrayList.hpp

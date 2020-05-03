@@ -10,11 +10,6 @@ StringTable::StringTable() {
     init_str = new PyString("__init__");
     add_str = new PyString("__add__");
     getattr_str = new PyString("__getattr__");
-    name_str = new PyString("__name__");
-    pyc_suf_str = new PyString(".pyc");
-    empty_str = new PyString("");
-    libdir_pre_str = new PyString("../lib/");
-    so_suf_str = new PyString(".so");
 }
 
 StringTable* StringTable::get_instance() {

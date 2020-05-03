@@ -77,9 +77,3 @@ void DictKlass::store_subscr(PyObject* obj,PyObject* index,PyObject* val) {
     dict->put(index,val);
     return ;
 }
-
-void PyDict::update(PyDict* dict) {
-    for (int i = 0;i < dict->size();i++) {
-        put(dict->map()->get_key(i), dict->map()->get_value(i));
-    }
-}

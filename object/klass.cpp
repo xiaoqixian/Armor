@@ -147,20 +147,22 @@ PyObject* Klass::getattr(PyObject* obj,PyObject* attr) {
     if (MethodObject::is_function(result)) {
         result = new MethodObject((FunctionObject*)result,obj);
     }
-    assert(result);
     return result;
 }
 
 PyObject* Klass::find_in_parents(PyObject* obj,PyObject* attr) {
     PyObject* result = Universe::pNone;
     result = obj->klass()->klass_dict()->get(attr);
+    
     if (result != Universe::pNone) {
         return result;
     }
+    
     //find attributes in all parents
     if (obj->klass()->mfo() == NULL) {
         return result;
     }
+    
     for (int i = 0;i < obj->klass()->mfo()->size();i++) {
         result = ((TypeObject*)(obj->klass()->mfo()->get(i)))->own_klass()->klass_dict()->get(attr);
         

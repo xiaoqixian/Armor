@@ -20,20 +20,6 @@ ADD_EXECUTABLE(armor main.cpp
     object/list.cpp
     object/pyDict.cpp
     runtime/stringTable.cpp
-    runtime/module.cpp
-)
-
-ADD_LIBRARY(math SHARED
-    extlib/math.cpp
-)
-
-ADD_CUSTOM_COMMAND(TARGET math
-    POST_BUILD
-    COMMAND mkdir -p lib
-    COMMAND cp libmath.so lib/
-    COMMAND cp ../lib/*.py lib/
-    COMMAND python -m compileall lib/*.py
 )
 
 INCLUDE_DIRECTORIES(./)
-TARGET_LINK_LIBRARIES(armor ${CMAKE_DL_LIBS})

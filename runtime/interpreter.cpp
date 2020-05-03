@@ -12,20 +12,17 @@
 #include "object/list.hpp"
 #include "runtime/stringTable.hpp"
 #include "object/klass.hpp"
-#include "runtime/module.hpp"
 
 #include <iostream>
 using namespace std;
 
 #define TRUE Universe::ptrue
 #define FALSE Universe::pfalse
-#define st(x) StringTable::get_instance()->str(x)
-#define str(x) x##_str
 
 Interpreter* Interpreter::instance = NULL;
 
 Interpreter::Interpreter() {
-    _builtins = new ModuleObject(new PyDict());
+    _builtins = new Map<PyObject*,PyObject*>();
 
     _builtins->put(new PyString("True"), Universe::ptrue);
     _builtins->put(new PyString("False"), Universe::pfalse);
@@ -38,13 +35,7 @@ Interpreter::Interpreter() {
     _builtins->put(new PyString("dict"), DictKlass::get_instance()->type_object());
     _builtins->put(new PyString("isinstance"), new FunctionObject(isinstance));
     _builtins->put(new PyString("type"), new FunctionObject(type_of));
-    
-}
 
-void Interpreter::initialize() {
-    _builtins->extend(ModuleObject::import_module(new PyString("builtin")));
-    _modules = new PyDict();
-    _modules->put(new PyString("__builtins__"), _builtins);
 }
 
 Interpreter* Interpreter::get_instance() {
@@ -94,7 +85,7 @@ void Interpreter::eval_frame() {
             case ByteCode::BINARY_ADD:
                 v = _frame->_stack->pop();
                 w = _frame->_stack->pop();
-                _frame->_stack->add(w->add(v));
+                _frame->_stack->add(v->add(w));
                 break;
             case ByteCode::BINARY_SUBTRACT:
                 break;
@@ -163,7 +154,6 @@ void Interpreter::eval_frame() {
                 _frame->set_pc(op_arg);
                 break;
             case ByteCode::SETUP_LOOP:
-                printf("SETUP_LOOP\n");
                 _frame->_loop_stack->add(new Block(op_code,_frame->get_pc() + op_arg,_frame->_stack->size()));
                 break;
             case ByteCode::POP_BLOCK:
@@ -295,8 +285,6 @@ void Interpreter::eval_frame() {
                     }
                 }
                 
-                v = _frame->_stack->get(_frame->_stack->size() - 1);
-                printf("function_name to call is %s\n", ((PyString*)v)->value());
                 build_frame(_frame->_stack->pop(),args);
                 if (args != NULL) {
                     delete args;
@@ -318,7 +306,7 @@ void Interpreter::eval_frame() {
             //method in class
             case ByteCode::LOAD_ATTR:
                 printf("LOAD_ATTR\n");
-                v = _frame->_stack->pop(); //the class or the module
+                v = _frame->_stack->pop(); //the class
                 w = _frame->_names->get(op_arg); //method in class
                 printf("the attr to load is ");
                 w->print();printf("\n");
@@ -375,28 +363,6 @@ void Interpreter::eval_frame() {
                 u = _frame->_stack->pop();// class name
                 v = Klass::create_klass(v, w, u);
                 _frame->_stack->add(v);
-                break;
-                
-            case ByteCode::IMPORT_NAME:
-                //as the compiler will produce two load_const operation,so we need to pop twice
-                _frame->_stack->pop();
-                _frame->_stack->pop();
-                v = _frame->names()->get(op_arg);
-                w = _modules->get(v);
-                if (w != Universe::pNone) {
-                    _frame->_stack->add(w);
-                    break;
-                }
-                w = ModuleObject::import_module(v);
-                assert(w);
-                _modules->put(v, w);
-                _frame->_stack->add(w);
-                break;
-            case ByteCode::IMPORT_FROM:
-                v = _frame->names()->get(op_arg);//v is the name to import in
-                w = _frame->_stack->get(_frame->_stack->size() - 1);//w is the module
-                u = ((ModuleObject*)w)->get(v);//u in the attribute, function or variables
-                _frame->_stack->add(u);
                 break;
 
             case ByteCode::RETURN_VALUE:
@@ -482,18 +448,4 @@ PyObject* Interpreter::call_virtual(PyObject* func,ObjList args) {
         return _ret_value;
     }
     return Universe::pNone;
-}
-
-PyDict* Interpreter::run_mod(CodeObject* code, PyString* mod_name) {
-    FrameObject* frame = new FrameObject(code);
-    frame->set_entry_frame(true);
-    frame->locals()->put(st(name), mod_name);
-    printf("module locals are ");frame->locals()->print();printf("\n");
-    
-    enter_frame(frame);
-    eval_frame();
-    PyDict* dict = frame->locals();
-    destory_frame();
-    printf("dict to return is ");dict->print();printf("\n");
-    return dict;
 }

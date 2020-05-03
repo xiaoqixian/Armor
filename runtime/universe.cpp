@@ -4,8 +4,6 @@
 #include "object/pyDict.hpp"
 #include "object/list.hpp"
 #include "runtime/functionObject.hpp"
-#include "runtime/module.hpp"
-#include "runtime/interpreter.hpp"
 
 PyInteger* Universe::ptrue = NULL;
 PyInteger* Universe::pfalse = NULL;
@@ -29,7 +27,6 @@ void Universe::genesis() {
     StringKlass::get_instance()->initialize();
     IntegerKlass::get_instance()->initialize();
     ListKlass::get_instance()->initialize();
-    ModuleKlass::get_instance()->initialize();
 
 
     type_klass->set_klass_dict(new PyDict());
@@ -54,8 +51,6 @@ void Universe::genesis() {
     NativeFunctionKlass::get_instance()->order_supers();
     MethodKlass::get_instance()->order_supers();
     
-    ModuleKlass::get_instance()->order_supers();
-    
-    Interpreter::get_instance()->initialize();
+    //Interpreter::get_instance()->initialize();
 
 }

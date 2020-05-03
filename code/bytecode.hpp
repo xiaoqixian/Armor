@@ -47,9 +47,6 @@ class ByteCode {
         static const unsigned char LOAD_LOCALS = 82;
         static const unsigned char LOAD_ATTR = 106;
         static const unsigned char STORE_ATTR = 95;
-        
-        static const unsigned char IMPORT_NAME = 108;
-        static const unsigned char IMPORT_FROM = 109;
 
         enum COMPARE {
             LESS = 0,

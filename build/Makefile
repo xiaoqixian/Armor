@@ -111,19 +111,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named math
-
-# Build rule for target.
-math: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 math
-.PHONY : math
-
-# fast build rule for target.
-math/fast:
-	$(MAKE) -f CMakeFiles/math.dir/build.make CMakeFiles/math.dir/build
-.PHONY : math/fast
-
-#=============================================================================
 # Target rules for targets named armor
 
 # Build rule for target.
@@ -189,33 +176,6 @@ code/codeObject.s: code/codeObject.cpp.s
 code/codeObject.cpp.s:
 	$(MAKE) -f CMakeFiles/armor.dir/build.make CMakeFiles/armor.dir/code/codeObject.cpp.s
 .PHONY : code/codeObject.cpp.s
-
-extlib/math.o: extlib/math.cpp.o
-
-.PHONY : extlib/math.o
-
-# target to build an object file
-extlib/math.cpp.o:
-	$(MAKE) -f CMakeFiles/math.dir/build.make CMakeFiles/math.dir/extlib/math.cpp.o
-.PHONY : extlib/math.cpp.o
-
-extlib/math.i: extlib/math.cpp.i
-
-.PHONY : extlib/math.i
-
-# target to preprocess a source file
-extlib/math.cpp.i:
-	$(MAKE) -f CMakeFiles/math.dir/build.make CMakeFiles/math.dir/extlib/math.cpp.i
-.PHONY : extlib/math.cpp.i
-
-extlib/math.s: extlib/math.cpp.s
-
-.PHONY : extlib/math.s
-
-# target to generate assembly for a file
-extlib/math.cpp.s:
-	$(MAKE) -f CMakeFiles/math.dir/build.make CMakeFiles/math.dir/extlib/math.cpp.s
-.PHONY : extlib/math.cpp.s
 
 main.o: main.cpp.o
 
@@ -487,33 +447,6 @@ runtime/interpreter.cpp.s:
 	$(MAKE) -f CMakeFiles/armor.dir/build.make CMakeFiles/armor.dir/runtime/interpreter.cpp.s
 .PHONY : runtime/interpreter.cpp.s
 
-runtime/module.o: runtime/module.cpp.o
-
-.PHONY : runtime/module.o
-
-# target to build an object file
-runtime/module.cpp.o:
-	$(MAKE) -f CMakeFiles/armor.dir/build.make CMakeFiles/armor.dir/runtime/module.cpp.o
-.PHONY : runtime/module.cpp.o
-
-runtime/module.i: runtime/module.cpp.i
-
-.PHONY : runtime/module.i
-
-# target to preprocess a source file
-runtime/module.cpp.i:
-	$(MAKE) -f CMakeFiles/armor.dir/build.make CMakeFiles/armor.dir/runtime/module.cpp.i
-.PHONY : runtime/module.cpp.i
-
-runtime/module.s: runtime/module.cpp.s
-
-.PHONY : runtime/module.s
-
-# target to generate assembly for a file
-runtime/module.cpp.s:
-	$(MAKE) -f CMakeFiles/armor.dir/build.make CMakeFiles/armor.dir/runtime/module.cpp.s
-.PHONY : runtime/module.cpp.s
-
 runtime/stringTable.o: runtime/stringTable.cpp.o
 
 .PHONY : runtime/stringTable.o
@@ -603,7 +536,6 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... math"
 	@echo "... armor"
 	@echo "... code/binaryFileParser.o"
 	@echo "... code/binaryFileParser.i"
@@ -611,9 +543,6 @@ help:
 	@echo "... code/codeObject.o"
 	@echo "... code/codeObject.i"
 	@echo "... code/codeObject.s"
-	@echo "... extlib/math.o"
-	@echo "... extlib/math.i"
-	@echo "... extlib/math.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -644,9 +573,6 @@ help:
 	@echo "... runtime/interpreter.o"
 	@echo "... runtime/interpreter.i"
 	@echo "... runtime/interpreter.s"
-	@echo "... runtime/module.o"
-	@echo "... runtime/module.i"
-	@echo "... runtime/module.s"
 	@echo "... runtime/stringTable.o"
 	@echo "... runtime/stringTable.i"
 	@echo "... runtime/stringTable.s"

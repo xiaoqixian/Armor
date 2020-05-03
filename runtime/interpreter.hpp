@@ -5,18 +5,14 @@
 #include "code/bytecode.hpp"
 #include "util/map.hpp"
 class FrameObject;
-class ModuleObject;
-class PyDict;
 
 class Interpreter {
     private:
-        ModuleObject* _builtins;
+        Map<PyObject*,PyObject*>* _builtins;
         FrameObject* _frame;
         PyObject* _ret_value;
         Interpreter();
         static Interpreter* instance;
-        PyDict* _modules;
-
     public:
         static Interpreter* get_instance();
         void run(CodeObject* codes);
@@ -26,8 +22,6 @@ class Interpreter {
         void eval_frame();
         void destory_frame();
         PyObject* call_virtual(PyObject* func,ObjList args);
-        PyDict* run_mod(CodeObject* code, PyString* mod_name);
-        void initialize();
 };
 
 

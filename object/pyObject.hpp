@@ -22,10 +22,6 @@ class PyObject {
         PyDict* obj_dict() {
             return _obj_dict;
         }
-        void set_obj_dict(PyDict* x) {
-            _obj_dict = x;
-        }
-
         void print();
 
         PyObject* add(PyObject* x);

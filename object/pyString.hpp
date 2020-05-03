@@ -18,7 +18,7 @@ class StringKlass:public Klass {
         virtual PyObject* allocate_instance(ArrayList<PyObject*>* args);
 
         virtual PyObject* equal(PyObject* x,PyObject* y);
-        virtual PyObject* add(PyObject* x,PyObject* y);
+//      virtual PyObject* add(PyObject* x,PyObject* y);
         
         virtual PyObject* subscr(PyObject* x,PyObject* y);
         virtual PyObject* contains(PyObject* x,PyObject* y);
@@ -27,14 +27,13 @@ class StringKlass:public Klass {
 };
 
 class PyString:public PyObject {
-    public:
+    private:
         char *_value;
         int _length;
 
     public:
         PyString(const char *x);
         PyString(const char *x, const int length);
-        PyString(int len);
 
         const char *value() {
             return _value;
@@ -44,11 +43,6 @@ class PyString:public PyObject {
             return _length;
         }
         
-        void set(int i,char x) {
-            _value[i] = x;
-        }
-        
-        PyString* join(PyObject* iterable);
 
 };
 

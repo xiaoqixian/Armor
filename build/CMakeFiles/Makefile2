@@ -65,50 +65,13 @@ CMAKE_SOURCE_DIR = /home/lunar/armor
 CMAKE_BINARY_DIR = /home/lunar/armor/build
 
 #=============================================================================
-# Target rules for target CMakeFiles/math.dir
-
-# All Build rule for target.
-CMakeFiles/math.dir/all:
-	$(MAKE) -f CMakeFiles/math.dir/build.make CMakeFiles/math.dir/depend
-	$(MAKE) -f CMakeFiles/math.dir/build.make CMakeFiles/math.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lunar/armor/build/CMakeFiles --progress-num=18,19 "Built target math"
-.PHONY : CMakeFiles/math.dir/all
-
-# Include target in all.
-all: CMakeFiles/math.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/math.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lunar/armor/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/math.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lunar/armor/build/CMakeFiles 0
-.PHONY : CMakeFiles/math.dir/rule
-
-# Convenience name for target.
-math: CMakeFiles/math.dir/rule
-
-.PHONY : math
-
-# clean rule for target.
-CMakeFiles/math.dir/clean:
-	$(MAKE) -f CMakeFiles/math.dir/build.make CMakeFiles/math.dir/clean
-.PHONY : CMakeFiles/math.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/math.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/armor.dir
 
 # All Build rule for target.
 CMakeFiles/armor.dir/all:
 	$(MAKE) -f CMakeFiles/armor.dir/build.make CMakeFiles/armor.dir/depend
 	$(MAKE) -f CMakeFiles/armor.dir/build.make CMakeFiles/armor.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lunar/armor/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17 "Built target armor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lunar/armor/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16 "Built target armor"
 .PHONY : CMakeFiles/armor.dir/all
 
 # Include target in all.
@@ -118,7 +81,7 @@ all: CMakeFiles/armor.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/armor.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lunar/armor/build/CMakeFiles 17
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lunar/armor/build/CMakeFiles 16
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/armor.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/lunar/armor/build/CMakeFiles 0
 .PHONY : CMakeFiles/armor.dir/rule
