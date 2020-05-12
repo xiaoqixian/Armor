@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/lunar/armor/. 
+CXX_INCLUDES = -I/home/lunar/pros/armor/. 
 

@@ -39,6 +39,7 @@ CMakeFiles/armor.dir/main.cpp.o: ../object/pyString.hpp
 CMakeFiles/armor.dir/main.cpp.o: ../runtime/interpreter.hpp
 CMakeFiles/armor.dir/main.cpp.o: ../runtime/universe.hpp
 CMakeFiles/armor.dir/main.cpp.o: ../util/bufferedInputStream.hpp
+CMakeFiles/armor.dir/main.cpp.o: ../util/figure.h
 
 CMakeFiles/armor.dir/object/klass.cpp.o: .././code/bytecode.hpp
 CMakeFiles/armor.dir/object/klass.cpp.o: .././code/codeObject.hpp
@@ -182,6 +183,9 @@ CMakeFiles/armor.dir/runtime/universe.cpp.o: .././util/arrayList.cpp
 CMakeFiles/armor.dir/runtime/universe.cpp.o: .././util/arrayList.hpp
 CMakeFiles/armor.dir/runtime/universe.cpp.o: .././util/map.hpp
 CMakeFiles/armor.dir/runtime/universe.cpp.o: ../runtime/universe.cpp
+
+CMakeFiles/armor.dir/util/figure.cpp.o: ../util/figure.cpp
+CMakeFiles/armor.dir/util/figure.cpp.o: ../util/figure.h
 
 CMakeFiles/armor.dir/util/map.cpp.o: .././object/klass.hpp
 CMakeFiles/armor.dir/util/map.cpp.o: .././object/pyInteger.hpp

@@ -48,10 +48,10 @@ RM = /opt/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lunar/armor
+CMAKE_SOURCE_DIR = /home/lunar/pros/armor
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lunar/armor/build
+CMAKE_BINARY_DIR = /home/lunar/pros/armor/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lunar/armor/build/CMakeFiles /home/lunar/armor/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lunar/pros/armor/build/CMakeFiles /home/lunar/pros/armor/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lunar/armor/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lunar/pros/armor/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -501,6 +501,33 @@ runtime/universe.cpp.s:
 	$(MAKE) -f CMakeFiles/armor.dir/build.make CMakeFiles/armor.dir/runtime/universe.cpp.s
 .PHONY : runtime/universe.cpp.s
 
+util/figure.o: util/figure.cpp.o
+
+.PHONY : util/figure.o
+
+# target to build an object file
+util/figure.cpp.o:
+	$(MAKE) -f CMakeFiles/armor.dir/build.make CMakeFiles/armor.dir/util/figure.cpp.o
+.PHONY : util/figure.cpp.o
+
+util/figure.i: util/figure.cpp.i
+
+.PHONY : util/figure.i
+
+# target to preprocess a source file
+util/figure.cpp.i:
+	$(MAKE) -f CMakeFiles/armor.dir/build.make CMakeFiles/armor.dir/util/figure.cpp.i
+.PHONY : util/figure.cpp.i
+
+util/figure.s: util/figure.cpp.s
+
+.PHONY : util/figure.s
+
+# target to generate assembly for a file
+util/figure.cpp.s:
+	$(MAKE) -f CMakeFiles/armor.dir/build.make CMakeFiles/armor.dir/util/figure.cpp.s
+.PHONY : util/figure.cpp.s
+
 util/map.o: util/map.cpp.o
 
 .PHONY : util/map.o
@@ -579,6 +606,9 @@ help:
 	@echo "... runtime/universe.o"
 	@echo "... runtime/universe.i"
 	@echo "... runtime/universe.s"
+	@echo "... util/figure.o"
+	@echo "... util/figure.i"
+	@echo "... util/figure.s"
 	@echo "... util/map.o"
 	@echo "... util/map.i"
 	@echo "... util/map.s"

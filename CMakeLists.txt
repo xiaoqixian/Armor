@@ -20,6 +20,7 @@ ADD_EXECUTABLE(armor main.cpp
     object/list.cpp
     object/pyDict.cpp
     runtime/stringTable.cpp
+    util/figure.cpp
 )
 
 INCLUDE_DIRECTORIES(./)

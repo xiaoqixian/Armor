@@ -1,4 +1,4 @@
-# Install script for directory: /home/lunar/armor
+# Install script for directory: /home/lunar/pros/armor
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/lunar/armor/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/lunar/pros/armor/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

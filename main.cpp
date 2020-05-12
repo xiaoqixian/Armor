@@ -7,12 +7,17 @@
 #include "object/pyDict.hpp"
 #include "object/pyString.hpp"
 #include "object/pyInteger.hpp"
+#include "util/figure.h"
+
+#define PROJECT_NAME "ARMOR"
 
 int main(int argc,char** argv) {
     if (argc < 1){
         printf("vm needs a paramter:finename\n");
         return 0;
     }
+    printf("-----Welcome to Armor!-----\n");
+    print_str(PROJECT_NAME);
     Universe::genesis();
     printf("1\n");
     BufferedInputStream stream(argv[1]);

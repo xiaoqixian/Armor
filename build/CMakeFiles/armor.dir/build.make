@@ -43,10 +43,10 @@ RM = /opt/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lunar/armor
+CMAKE_SOURCE_DIR = /home/lunar/pros/armor
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lunar/armor/build
+CMAKE_BINARY_DIR = /home/lunar/pros/armor/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/armor.dir/depend.make
@@ -59,198 +59,211 @@ include CMakeFiles/armor.dir/flags.make
 
 CMakeFiles/armor.dir/main.cpp.o: CMakeFiles/armor.dir/flags.make
 CMakeFiles/armor.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lunar/armor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/armor.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/armor.dir/main.cpp.o -c /home/lunar/armor/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lunar/pros/armor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/armor.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/armor.dir/main.cpp.o -c /home/lunar/pros/armor/main.cpp
 
 CMakeFiles/armor.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/armor.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lunar/armor/main.cpp > CMakeFiles/armor.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lunar/pros/armor/main.cpp > CMakeFiles/armor.dir/main.cpp.i
 
 CMakeFiles/armor.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/armor.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lunar/armor/main.cpp -o CMakeFiles/armor.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lunar/pros/armor/main.cpp -o CMakeFiles/armor.dir/main.cpp.s
 
 CMakeFiles/armor.dir/code/binaryFileParser.cpp.o: CMakeFiles/armor.dir/flags.make
 CMakeFiles/armor.dir/code/binaryFileParser.cpp.o: ../code/binaryFileParser.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lunar/armor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/armor.dir/code/binaryFileParser.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/armor.dir/code/binaryFileParser.cpp.o -c /home/lunar/armor/code/binaryFileParser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lunar/pros/armor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/armor.dir/code/binaryFileParser.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/armor.dir/code/binaryFileParser.cpp.o -c /home/lunar/pros/armor/code/binaryFileParser.cpp
 
 CMakeFiles/armor.dir/code/binaryFileParser.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/armor.dir/code/binaryFileParser.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lunar/armor/code/binaryFileParser.cpp > CMakeFiles/armor.dir/code/binaryFileParser.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lunar/pros/armor/code/binaryFileParser.cpp > CMakeFiles/armor.dir/code/binaryFileParser.cpp.i
 
 CMakeFiles/armor.dir/code/binaryFileParser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/armor.dir/code/binaryFileParser.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lunar/armor/code/binaryFileParser.cpp -o CMakeFiles/armor.dir/code/binaryFileParser.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lunar/pros/armor/code/binaryFileParser.cpp -o CMakeFiles/armor.dir/code/binaryFileParser.cpp.s
 
 CMakeFiles/armor.dir/code/codeObject.cpp.o: CMakeFiles/armor.dir/flags.make
 CMakeFiles/armor.dir/code/codeObject.cpp.o: ../code/codeObject.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lunar/armor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/armor.dir/code/codeObject.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/armor.dir/code/codeObject.cpp.o -c /home/lunar/armor/code/codeObject.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lunar/pros/armor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/armor.dir/code/codeObject.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/armor.dir/code/codeObject.cpp.o -c /home/lunar/pros/armor/code/codeObject.cpp
 
 CMakeFiles/armor.dir/code/codeObject.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/armor.dir/code/codeObject.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lunar/armor/code/codeObject.cpp > CMakeFiles/armor.dir/code/codeObject.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lunar/pros/armor/code/codeObject.cpp > CMakeFiles/armor.dir/code/codeObject.cpp.i
 
 CMakeFiles/armor.dir/code/codeObject.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/armor.dir/code/codeObject.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lunar/armor/code/codeObject.cpp -o CMakeFiles/armor.dir/code/codeObject.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lunar/pros/armor/code/codeObject.cpp -o CMakeFiles/armor.dir/code/codeObject.cpp.s
 
 CMakeFiles/armor.dir/object/klass.cpp.o: CMakeFiles/armor.dir/flags.make
 CMakeFiles/armor.dir/object/klass.cpp.o: ../object/klass.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lunar/armor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/armor.dir/object/klass.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/armor.dir/object/klass.cpp.o -c /home/lunar/armor/object/klass.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lunar/pros/armor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/armor.dir/object/klass.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/armor.dir/object/klass.cpp.o -c /home/lunar/pros/armor/object/klass.cpp
 
 CMakeFiles/armor.dir/object/klass.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/armor.dir/object/klass.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lunar/armor/object/klass.cpp > CMakeFiles/armor.dir/object/klass.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lunar/pros/armor/object/klass.cpp > CMakeFiles/armor.dir/object/klass.cpp.i
 
 CMakeFiles/armor.dir/object/klass.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/armor.dir/object/klass.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lunar/armor/object/klass.cpp -o CMakeFiles/armor.dir/object/klass.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lunar/pros/armor/object/klass.cpp -o CMakeFiles/armor.dir/object/klass.cpp.s
 
 CMakeFiles/armor.dir/object/pyString.cpp.o: CMakeFiles/armor.dir/flags.make
 CMakeFiles/armor.dir/object/pyString.cpp.o: ../object/pyString.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lunar/armor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/armor.dir/object/pyString.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/armor.dir/object/pyString.cpp.o -c /home/lunar/armor/object/pyString.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lunar/pros/armor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/armor.dir/object/pyString.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/armor.dir/object/pyString.cpp.o -c /home/lunar/pros/armor/object/pyString.cpp
 
 CMakeFiles/armor.dir/object/pyString.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/armor.dir/object/pyString.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lunar/armor/object/pyString.cpp > CMakeFiles/armor.dir/object/pyString.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lunar/pros/armor/object/pyString.cpp > CMakeFiles/armor.dir/object/pyString.cpp.i
 
 CMakeFiles/armor.dir/object/pyString.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/armor.dir/object/pyString.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lunar/armor/object/pyString.cpp -o CMakeFiles/armor.dir/object/pyString.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lunar/pros/armor/object/pyString.cpp -o CMakeFiles/armor.dir/object/pyString.cpp.s
 
 CMakeFiles/armor.dir/object/pyInteger.cpp.o: CMakeFiles/armor.dir/flags.make
 CMakeFiles/armor.dir/object/pyInteger.cpp.o: ../object/pyInteger.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lunar/armor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/armor.dir/object/pyInteger.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/armor.dir/object/pyInteger.cpp.o -c /home/lunar/armor/object/pyInteger.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lunar/pros/armor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/armor.dir/object/pyInteger.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/armor.dir/object/pyInteger.cpp.o -c /home/lunar/pros/armor/object/pyInteger.cpp
 
 CMakeFiles/armor.dir/object/pyInteger.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/armor.dir/object/pyInteger.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lunar/armor/object/pyInteger.cpp > CMakeFiles/armor.dir/object/pyInteger.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lunar/pros/armor/object/pyInteger.cpp > CMakeFiles/armor.dir/object/pyInteger.cpp.i
 
 CMakeFiles/armor.dir/object/pyInteger.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/armor.dir/object/pyInteger.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lunar/armor/object/pyInteger.cpp -o CMakeFiles/armor.dir/object/pyInteger.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lunar/pros/armor/object/pyInteger.cpp -o CMakeFiles/armor.dir/object/pyInteger.cpp.s
 
 CMakeFiles/armor.dir/object/pyObject.cpp.o: CMakeFiles/armor.dir/flags.make
 CMakeFiles/armor.dir/object/pyObject.cpp.o: ../object/pyObject.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lunar/armor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/armor.dir/object/pyObject.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/armor.dir/object/pyObject.cpp.o -c /home/lunar/armor/object/pyObject.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lunar/pros/armor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/armor.dir/object/pyObject.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/armor.dir/object/pyObject.cpp.o -c /home/lunar/pros/armor/object/pyObject.cpp
 
 CMakeFiles/armor.dir/object/pyObject.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/armor.dir/object/pyObject.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lunar/armor/object/pyObject.cpp > CMakeFiles/armor.dir/object/pyObject.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lunar/pros/armor/object/pyObject.cpp > CMakeFiles/armor.dir/object/pyObject.cpp.i
 
 CMakeFiles/armor.dir/object/pyObject.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/armor.dir/object/pyObject.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lunar/armor/object/pyObject.cpp -o CMakeFiles/armor.dir/object/pyObject.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lunar/pros/armor/object/pyObject.cpp -o CMakeFiles/armor.dir/object/pyObject.cpp.s
 
 CMakeFiles/armor.dir/runtime/interpreter.cpp.o: CMakeFiles/armor.dir/flags.make
 CMakeFiles/armor.dir/runtime/interpreter.cpp.o: ../runtime/interpreter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lunar/armor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/armor.dir/runtime/interpreter.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/armor.dir/runtime/interpreter.cpp.o -c /home/lunar/armor/runtime/interpreter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lunar/pros/armor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/armor.dir/runtime/interpreter.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/armor.dir/runtime/interpreter.cpp.o -c /home/lunar/pros/armor/runtime/interpreter.cpp
 
 CMakeFiles/armor.dir/runtime/interpreter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/armor.dir/runtime/interpreter.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lunar/armor/runtime/interpreter.cpp > CMakeFiles/armor.dir/runtime/interpreter.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lunar/pros/armor/runtime/interpreter.cpp > CMakeFiles/armor.dir/runtime/interpreter.cpp.i
 
 CMakeFiles/armor.dir/runtime/interpreter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/armor.dir/runtime/interpreter.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lunar/armor/runtime/interpreter.cpp -o CMakeFiles/armor.dir/runtime/interpreter.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lunar/pros/armor/runtime/interpreter.cpp -o CMakeFiles/armor.dir/runtime/interpreter.cpp.s
 
 CMakeFiles/armor.dir/runtime/universe.cpp.o: CMakeFiles/armor.dir/flags.make
 CMakeFiles/armor.dir/runtime/universe.cpp.o: ../runtime/universe.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lunar/armor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/armor.dir/runtime/universe.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/armor.dir/runtime/universe.cpp.o -c /home/lunar/armor/runtime/universe.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lunar/pros/armor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/armor.dir/runtime/universe.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/armor.dir/runtime/universe.cpp.o -c /home/lunar/pros/armor/runtime/universe.cpp
 
 CMakeFiles/armor.dir/runtime/universe.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/armor.dir/runtime/universe.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lunar/armor/runtime/universe.cpp > CMakeFiles/armor.dir/runtime/universe.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lunar/pros/armor/runtime/universe.cpp > CMakeFiles/armor.dir/runtime/universe.cpp.i
 
 CMakeFiles/armor.dir/runtime/universe.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/armor.dir/runtime/universe.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lunar/armor/runtime/universe.cpp -o CMakeFiles/armor.dir/runtime/universe.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lunar/pros/armor/runtime/universe.cpp -o CMakeFiles/armor.dir/runtime/universe.cpp.s
 
 CMakeFiles/armor.dir/util/map.cpp.o: CMakeFiles/armor.dir/flags.make
 CMakeFiles/armor.dir/util/map.cpp.o: ../util/map.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lunar/armor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/armor.dir/util/map.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/armor.dir/util/map.cpp.o -c /home/lunar/armor/util/map.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lunar/pros/armor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/armor.dir/util/map.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/armor.dir/util/map.cpp.o -c /home/lunar/pros/armor/util/map.cpp
 
 CMakeFiles/armor.dir/util/map.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/armor.dir/util/map.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lunar/armor/util/map.cpp > CMakeFiles/armor.dir/util/map.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lunar/pros/armor/util/map.cpp > CMakeFiles/armor.dir/util/map.cpp.i
 
 CMakeFiles/armor.dir/util/map.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/armor.dir/util/map.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lunar/armor/util/map.cpp -o CMakeFiles/armor.dir/util/map.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lunar/pros/armor/util/map.cpp -o CMakeFiles/armor.dir/util/map.cpp.s
 
 CMakeFiles/armor.dir/runtime/frameObject.cpp.o: CMakeFiles/armor.dir/flags.make
 CMakeFiles/armor.dir/runtime/frameObject.cpp.o: ../runtime/frameObject.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lunar/armor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/armor.dir/runtime/frameObject.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/armor.dir/runtime/frameObject.cpp.o -c /home/lunar/armor/runtime/frameObject.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lunar/pros/armor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/armor.dir/runtime/frameObject.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/armor.dir/runtime/frameObject.cpp.o -c /home/lunar/pros/armor/runtime/frameObject.cpp
 
 CMakeFiles/armor.dir/runtime/frameObject.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/armor.dir/runtime/frameObject.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lunar/armor/runtime/frameObject.cpp > CMakeFiles/armor.dir/runtime/frameObject.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lunar/pros/armor/runtime/frameObject.cpp > CMakeFiles/armor.dir/runtime/frameObject.cpp.i
 
 CMakeFiles/armor.dir/runtime/frameObject.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/armor.dir/runtime/frameObject.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lunar/armor/runtime/frameObject.cpp -o CMakeFiles/armor.dir/runtime/frameObject.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lunar/pros/armor/runtime/frameObject.cpp -o CMakeFiles/armor.dir/runtime/frameObject.cpp.s
 
 CMakeFiles/armor.dir/runtime/functionObject.cpp.o: CMakeFiles/armor.dir/flags.make
 CMakeFiles/armor.dir/runtime/functionObject.cpp.o: ../runtime/functionObject.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lunar/armor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/armor.dir/runtime/functionObject.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/armor.dir/runtime/functionObject.cpp.o -c /home/lunar/armor/runtime/functionObject.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lunar/pros/armor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/armor.dir/runtime/functionObject.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/armor.dir/runtime/functionObject.cpp.o -c /home/lunar/pros/armor/runtime/functionObject.cpp
 
 CMakeFiles/armor.dir/runtime/functionObject.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/armor.dir/runtime/functionObject.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lunar/armor/runtime/functionObject.cpp > CMakeFiles/armor.dir/runtime/functionObject.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lunar/pros/armor/runtime/functionObject.cpp > CMakeFiles/armor.dir/runtime/functionObject.cpp.i
 
 CMakeFiles/armor.dir/runtime/functionObject.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/armor.dir/runtime/functionObject.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lunar/armor/runtime/functionObject.cpp -o CMakeFiles/armor.dir/runtime/functionObject.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lunar/pros/armor/runtime/functionObject.cpp -o CMakeFiles/armor.dir/runtime/functionObject.cpp.s
 
 CMakeFiles/armor.dir/object/list.cpp.o: CMakeFiles/armor.dir/flags.make
 CMakeFiles/armor.dir/object/list.cpp.o: ../object/list.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lunar/armor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/armor.dir/object/list.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/armor.dir/object/list.cpp.o -c /home/lunar/armor/object/list.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lunar/pros/armor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/armor.dir/object/list.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/armor.dir/object/list.cpp.o -c /home/lunar/pros/armor/object/list.cpp
 
 CMakeFiles/armor.dir/object/list.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/armor.dir/object/list.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lunar/armor/object/list.cpp > CMakeFiles/armor.dir/object/list.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lunar/pros/armor/object/list.cpp > CMakeFiles/armor.dir/object/list.cpp.i
 
 CMakeFiles/armor.dir/object/list.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/armor.dir/object/list.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lunar/armor/object/list.cpp -o CMakeFiles/armor.dir/object/list.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lunar/pros/armor/object/list.cpp -o CMakeFiles/armor.dir/object/list.cpp.s
 
 CMakeFiles/armor.dir/object/pyDict.cpp.o: CMakeFiles/armor.dir/flags.make
 CMakeFiles/armor.dir/object/pyDict.cpp.o: ../object/pyDict.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lunar/armor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/armor.dir/object/pyDict.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/armor.dir/object/pyDict.cpp.o -c /home/lunar/armor/object/pyDict.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lunar/pros/armor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/armor.dir/object/pyDict.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/armor.dir/object/pyDict.cpp.o -c /home/lunar/pros/armor/object/pyDict.cpp
 
 CMakeFiles/armor.dir/object/pyDict.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/armor.dir/object/pyDict.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lunar/armor/object/pyDict.cpp > CMakeFiles/armor.dir/object/pyDict.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lunar/pros/armor/object/pyDict.cpp > CMakeFiles/armor.dir/object/pyDict.cpp.i
 
 CMakeFiles/armor.dir/object/pyDict.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/armor.dir/object/pyDict.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lunar/armor/object/pyDict.cpp -o CMakeFiles/armor.dir/object/pyDict.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lunar/pros/armor/object/pyDict.cpp -o CMakeFiles/armor.dir/object/pyDict.cpp.s
 
 CMakeFiles/armor.dir/runtime/stringTable.cpp.o: CMakeFiles/armor.dir/flags.make
 CMakeFiles/armor.dir/runtime/stringTable.cpp.o: ../runtime/stringTable.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lunar/armor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/armor.dir/runtime/stringTable.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/armor.dir/runtime/stringTable.cpp.o -c /home/lunar/armor/runtime/stringTable.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lunar/pros/armor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/armor.dir/runtime/stringTable.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/armor.dir/runtime/stringTable.cpp.o -c /home/lunar/pros/armor/runtime/stringTable.cpp
 
 CMakeFiles/armor.dir/runtime/stringTable.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/armor.dir/runtime/stringTable.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lunar/armor/runtime/stringTable.cpp > CMakeFiles/armor.dir/runtime/stringTable.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lunar/pros/armor/runtime/stringTable.cpp > CMakeFiles/armor.dir/runtime/stringTable.cpp.i
 
 CMakeFiles/armor.dir/runtime/stringTable.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/armor.dir/runtime/stringTable.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lunar/armor/runtime/stringTable.cpp -o CMakeFiles/armor.dir/runtime/stringTable.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lunar/pros/armor/runtime/stringTable.cpp -o CMakeFiles/armor.dir/runtime/stringTable.cpp.s
+
+CMakeFiles/armor.dir/util/figure.cpp.o: CMakeFiles/armor.dir/flags.make
+CMakeFiles/armor.dir/util/figure.cpp.o: ../util/figure.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lunar/pros/armor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/armor.dir/util/figure.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/armor.dir/util/figure.cpp.o -c /home/lunar/pros/armor/util/figure.cpp
+
+CMakeFiles/armor.dir/util/figure.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/armor.dir/util/figure.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lunar/pros/armor/util/figure.cpp > CMakeFiles/armor.dir/util/figure.cpp.i
+
+CMakeFiles/armor.dir/util/figure.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/armor.dir/util/figure.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lunar/pros/armor/util/figure.cpp -o CMakeFiles/armor.dir/util/figure.cpp.s
 
 # Object files for target armor
 armor_OBJECTS = \
@@ -268,7 +281,8 @@ armor_OBJECTS = \
 "CMakeFiles/armor.dir/runtime/functionObject.cpp.o" \
 "CMakeFiles/armor.dir/object/list.cpp.o" \
 "CMakeFiles/armor.dir/object/pyDict.cpp.o" \
-"CMakeFiles/armor.dir/runtime/stringTable.cpp.o"
+"CMakeFiles/armor.dir/runtime/stringTable.cpp.o" \
+"CMakeFiles/armor.dir/util/figure.cpp.o"
 
 # External object files for target armor
 armor_EXTERNAL_OBJECTS =
@@ -288,9 +302,10 @@ armor: CMakeFiles/armor.dir/runtime/functionObject.cpp.o
 armor: CMakeFiles/armor.dir/object/list.cpp.o
 armor: CMakeFiles/armor.dir/object/pyDict.cpp.o
 armor: CMakeFiles/armor.dir/runtime/stringTable.cpp.o
+armor: CMakeFiles/armor.dir/util/figure.cpp.o
 armor: CMakeFiles/armor.dir/build.make
 armor: CMakeFiles/armor.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lunar/armor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable armor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lunar/pros/armor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable armor"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/armor.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -303,6 +318,6 @@ CMakeFiles/armor.dir/clean:
 .PHONY : CMakeFiles/armor.dir/clean
 
 CMakeFiles/armor.dir/depend:
-	cd /home/lunar/armor/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lunar/armor /home/lunar/armor /home/lunar/armor/build /home/lunar/armor/build /home/lunar/armor/build/CMakeFiles/armor.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/lunar/pros/armor/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lunar/pros/armor /home/lunar/pros/armor /home/lunar/pros/armor/build /home/lunar/pros/armor/build /home/lunar/pros/armor/build/CMakeFiles/armor.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/armor.dir/depend
 

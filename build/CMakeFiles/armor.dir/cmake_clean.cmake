@@ -14,6 +14,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/armor.dir/object/list.cpp.o"
   "CMakeFiles/armor.dir/object/pyDict.cpp.o"
   "CMakeFiles/armor.dir/runtime/stringTable.cpp.o"
+  "CMakeFiles/armor.dir/util/figure.cpp.o"
   "armor.pdb"
   "armor"
 )
